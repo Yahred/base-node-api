@@ -1,8 +1,9 @@
 import express from 'express';
-import conectarDB from './db/conectarDB.js';
-import 'dotenv/config';
+import 'dotenv/config'
 
+import conectarDB from './db/conectarDB.js';
 import enrutar from './router.js';
+
 
 const app = express();
 
@@ -18,3 +19,5 @@ try {
 }
 
 app.listen(PORT, () => console.log(`Servicio iniciado en el puerto: ${PORT}`));
+
+export default app;
